@@ -1,19 +1,16 @@
-const Hello = (props) => {  
-  return (
-    <div>
-      <p>Hello {props.name} you are {props.age} years old</p>   
-    </div>
-  )
-}
+import { useState } from 'react'
+
 const App = () => {
-  const nimi = 'Pekka'  
-  const ika = 10
+  // tallenna napit omaan tilaansa
+  const [good, setGood] = useState(0)
+  const [neutral, setNeutral] = useState(0)
+  const [bad, setBad] = useState(0)
+
   return (
     <div>
-      <h1>Greetings</h1>
-      <Hello name="Maya" age={26 + 10} />
-      <Hello name={nimi} age={ika} />
+      code here
     </div>
   )
 }
+
 export default App
